@@ -35,7 +35,7 @@
 ### 🧩 Cài đặt dưới dạng Extension
 
 1. Tải hoặc clone source code:
-   git clone https://github.com/yourusername/google-forms-solver.git
+   git clone https://github.com/thanhmax14/Google-Forms-solver.git
 Mở Chrome và truy cập: chrome://extensions/
 
 Bật Chế độ dành cho nhà phát triển (Developer Mode)
