@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form Answer Helper</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      min-width: 200px;
+      padding: 10px;
+    }
+
+    button {
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, #4e8df5, #2563eb);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      position: relative;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #3b82f6, #1e40af);
+      transform: scale(1.02);
+    }
+
+    button:active {
+      transform: scale(0.97);
+    }
+
+    button.loading {
+      pointer-events: none;
+      opacity: 0.8;
+    }
+
+    button.loading::after {
+      content: "";
+      border: 2px solid transparent;
+      border-top: 2px solid #fff;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      transform: translateY(-50%);
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: translateY(-50%) rotate(0deg);
+      }
+
+      100% {
+        transform: translateY(-50%) rotate(360deg);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <button id="getAnswersBtn">Get Answers</button>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
